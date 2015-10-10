@@ -14,7 +14,7 @@
 ## Application
 
 #= require_tree ./modules
-#= require_tree ./vendor
+#= #require_tree ./vendor
 #= require app
 #= require router
 #= require_tree ./models

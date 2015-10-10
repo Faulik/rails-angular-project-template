@@ -1,8 +1,9 @@
 h1 Items
 div dir-paginate='item in items | itemsPerPage: itemsPerPage' total-items='totalItems' current-page='pagination.current'
-  a ui-sref='public.item({itemId: item.id})'
-    | {{ item.name }}
-  p
+  h3 
+    a ui-sref='public.item({itemId: item.id})'
+      | {{ item.name }}
+  p.elipsis_4_lines.item_container
     | {{ item.description }}
 
 dir-pagination-controls on-page-change='pageChanged(newPageNumber)'

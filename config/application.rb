@@ -19,6 +19,8 @@ module App
     # config.middleware.insert_before(Rack::Sendfile, LightResizer::Middleware, Rails.root)
     config.autoload_paths << "#{Rails.root}/lib/**/*"
 
+    config.assets.initialize_on_precompile = true
+
     config.assets.paths << "#{config.root}/vendor/assets/bower_components"
     # AngularJS slim templates
 

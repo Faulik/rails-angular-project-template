@@ -1,0 +1,14 @@
+{
+  "name": "ruby_angular",
+  "version": "1.0.0",
+  "dependencies": {
+    "bower": "~1.5"
+  },
+  "engines": {
+    "node": "4.x",
+    "npm": "2.14.x"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}

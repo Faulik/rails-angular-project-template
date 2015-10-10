@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.3'
 
 # Can't build rmagic
 # gem 'rademade_admin', github: 'rademade/rademade_admin'
@@ -14,13 +15,19 @@ gem 'slim-rails', '~> 3.0.1'
 gem 'kaminari', '~> 0.16.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.3.2'
+# Server to serve rails
+gem 'thin', '~> 1.6.3'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 gem 'actionpack'
 
-# Xml and Html parsing
 gem 'nokogiri', '~> 1.6.7.rc3'
+
+gem 'populator'
+gem 'faker'
+
+# Xml and Html parsing
 
 gem 'bson'
 gem 'json'
@@ -41,15 +48,12 @@ group :test do
   gem 'rspec-rails', '~> 3.3.0'
   gem 'database_cleaner', '~> 1.5.0'
   gem 'factory_girl_rails', '~> 4.5.0'
-  gem 'fakeweb', '~> 1.3.0'
   gem 'fuubar', '~> 2.0.0'
   gem 'simplecov', require: false
 end
 
 group :development do
   gem 'byebug'
-  gem 'populator'
-  gem 'faker'
   gem 'annotate'
   gem 'pry'
   gem 'spring'
