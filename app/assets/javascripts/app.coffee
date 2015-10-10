@@ -3,7 +3,8 @@ window.app = angular.module('app', [
   'templates',
   'rails',
   'ngSanitize',
-  'appResource'
+  'appResource',
+  'angularUtils.directives.dirPagination'
 ]).run [ "$rootScope", ($rootScope) ->
 
 ]

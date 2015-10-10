@@ -1,1 +1,8 @@
-h1 Index page
+h1 Items
+div dir-paginate='item in items | itemsPerPage: itemsPerPage' total-items='totalItems' current-page='pagination.current'
+  a ui-sref='public.item({itemId: item.id})'
+    | {{ item.name }}
+  p
+    | {{ item.description }}
+
+dir-pagination-controls on-page-change='pageChanged(newPageNumber)'

@@ -3,6 +3,7 @@
 #= require angular-rails-templates.js.erb
 #= require angularjs/rails/resource
 #= require angular-sanitize/angular-sanitize
+#= require angular-utils-pagination/dirPagination
 
 
 ## Libraries
@@ -13,6 +14,7 @@
 ## Application
 
 #= require_tree ./modules
+#= require_tree ./vendor
 #= require app
 #= require router
 #= require_tree ./models

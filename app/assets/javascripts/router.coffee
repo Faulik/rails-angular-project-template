@@ -14,6 +14,11 @@ app.config([
       templateUrl: 'views/index.html'
       controller: 'index'
 
+    .state 'public.item',
+      url: '/items/:itemId',
+      templateUrl: 'views/show.html'
+      controller: 'itemShow'
+
     $urlRouterProvider.otherwise '/'
 
     $locationProvider.html5Mode
