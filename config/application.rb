@@ -16,7 +16,7 @@ module App
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
 
-    config.middleware.insert_before(Rack::Sendfile, LightResizer::Middleware, Rails.root)
+    # config.middleware.insert_before(Rack::Sendfile, LightResizer::Middleware, Rails.root)
     config.autoload_paths << "#{Rails.root}/lib/**/*"
 
     config.assets.paths << "#{config.root}/vendor/assets/bower_components"

@@ -1,9 +1,28 @@
 source 'https://rubygems.org'
 
-gem 'rademade_admin', github: 'rademade/rademade_admin'
+# Can't build rmagic
+# gem 'rademade_admin', github: 'rademade/rademade_admin'
 
-gem 'sqlite3'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 4.2.4'
+gem 'responders'
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 0.18.3'
+# Buidlder for slim templates
+gem 'slim-rails', '~> 3.0.1'
+# Pagination
+gem 'kaminari', '~> 0.16.1'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.3.2'
 
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
+gem 'actionpack'
+
+# Xml and Html parsing
+gem 'nokogiri', '~> 1.6.7.rc3'
+
+gem 'bson'
 gem 'json'
 gem 'rabl'
 gem 'bower-rails'
@@ -12,20 +31,26 @@ gem 'bower-rails'
 gem 'sass-rails'
 gem 'compass-rails', '2.0.2'
 
-#Scripts
+# Scripts
 gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'angular-rails-templates'
 gem 'angularjs-rails-resource'
 
+group :test do
+  gem 'rspec-rails', '~> 3.3.0'
+  gem 'database_cleaner', '~> 1.5.0'
+  gem 'factory_girl_rails', '~> 4.5.0'
+  gem 'fakeweb', '~> 1.3.0'
+  gem 'fuubar', '~> 2.0.0'
+  gem 'simplecov', require: false
+end
+
 group :development do
-  gem 'capistrano', '3.2.1'
-  gem 'capistrano-rails', '~> 1.1'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rvm', '0.1.2'
-  gem 'hipchat', '~> 1.2.0'
-  gem 'rails-dev-tweaks'
-  gem 'quiet_assets', group: :development
+  gem 'byebug'
+  gem 'populator'
+  gem 'faker'
+  gem 'annotate'
   gem 'pry'
   gem 'spring'
 end
