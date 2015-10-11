@@ -29,5 +29,10 @@ module App
     config.angular_templates.markups        = %w(erb slim)
     config.angular_templates.htmlcompressor = false
 
+    config.generators do |g|
+      g.test_framework :rspec
+      g.stylesheets false
+      g.javascripts false        
+    end
   end
 end

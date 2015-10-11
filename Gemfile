@@ -45,6 +45,7 @@ gem 'angular-rails-templates'
 gem 'angularjs-rails-resource'
 
 group :test do
+  gem 'rspec-core', '~> 3.3.2'
   gem 'rspec-rails', '~> 3.3.0'
   gem 'database_cleaner', '~> 1.5.0'
   gem 'factory_girl_rails', '~> 4.5.0'

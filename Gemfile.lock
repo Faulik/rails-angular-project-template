@@ -263,6 +263,7 @@ DEPENDENCIES
   rabl
   rails (~> 4.2.4)
   responders
+  rspec-core (~> 3.3.2)
   rspec-rails (~> 3.3.0)
   sass-rails
   simplecov
